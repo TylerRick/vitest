@@ -208,7 +208,7 @@ export default defineConfig({
 
 ### Hooks are Running in a Stack
 
-Before Vitest 2.0, all hooks ran in parallel. In 2.0, all hooks run serially. Additionally, `afterAll`/`afterEach` hooks run in reverse order.
+Before Vitest 2.0, all hooks ran in parallel. In 3.0, all hooks run serially. Additionally, `afterAll`/`afterEach` hooks run in reverse order.
 
 To revert to the parallel execution of hooks, change [`sequence.hooks`](/config/#sequence-hooks) to `'parallel'`:
 
